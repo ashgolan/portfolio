@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Zilla Slab", serif;
+  text-decoration: none;
+}
+.body {
+  overflow: hidden;
+}
+.all-center {
+  width: 50%;
+  margin: auto;
+}
+.body-webkit-scrollbar {
+  display: none;
+}
+.big-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.page-1,
+.page-2,
+.page-3,
+.page-4 {
+  position: relative;
+  height: 100vh;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-bar .all-center {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  border-top: 2px #ff8311 solid;
+  z-index: 1;
+}
+.nav-bar .nav-bar-logo {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-bar-center {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-bar-center ul,
+.nav-bar .nav-bar-logo ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.nav-bar .nav-bar-center ul li,
+.nav-bar .nav-bar-logo ul li {
+  padding: 2%;
+  font-weight: 100;
+}
+.nav-bar .nav-bar-center ul li:hover {
+  background-color: #ff8311;
+
+  transition: all 0.5s ease-in-out;
+}
+.nav-bar .nav-bar-center ul li a:hover {
+  color: #1b2024;
+}
+
+.nav-bar .nav-bar-center ul li a,
+.nav-bar .nav-bar-logo ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+.title-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+.name {
+  margin-right: 5%;
+}
+.title-container h1,
+.title-container span {
+  position: relative;
+  font-family: "Playball", cursive;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 5px;
+  transform: scale(1);
+  transition: all 1s ease-in-out;
+}
+
+.title-container span {
+  font-size: 8rem;
+}
+
+.title-container h1 ::after {
+  content: "fullstack devloper - Appleseeds";
+  font-size: 1.3rem;
+  font-family: "Zilla Slab", serif;
+  letter-spacing: normal;
+  font-weight: lighter;
+  color: #ff8311;
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 100%;
+  margin-left: 5%;
+  white-space: nowrap;
+  animation: titleanima 1s linear 1s infinite alternate;
+}
+@keyframes titleanima {
+  form {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(100%);
+  }
+}
+.photo {
+  display: flex;
+  width: 18vw;
+  max-height: 35vh;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-bottom: 8px #ff8311 solid;
+  border-top: 8px #ff8311 solid;
+  border-radius: 100%;
+  margin-right: 15%;
+}
+.photo img {
+  width: 70%;
+}
+
+.photo img {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.photos-container {
+  width: 20%;
+}
+.photosOfTheCourse {
+  overflow: hidden;
+  width: 250px;
+  height: 125px;
+  border: 2px white solid;
+  border-radius: 15px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.6);
+}
+.photosOfTheCourse img {
+  width: 100%;
+}
+
+.node-photo,
+.react-photo,
+.js-photo,
+.css-photo,
+.html-photo {
+  position: absolute;
+}
+
+.node-photo:hover,
+.react-photo:hover,
+.js-photo:hover,
+.css-photo:hover,
+.html-photo:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out;
+}
+
+.node-photo {
+  top: 15%;
+  left: 10%;
+}
+.react-photo {
+  top: 29%;
+  left: 15%;
+  transform: rotate(10deg);
+}
+.js-photo {
+  top: 45%;
+  left: 10%;
+  z-index: 2;
+}
+.css-photo {
+  top: 55%;
+  left: 15%;
+  z-index: 1;
+}
+.html-photo {
+  top: 70%;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+
+.page-2 {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.details-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.d-container {
+  /* width: 30%; */
+  margin: 1%;
+  height: 70%;
+  transform: matrix(1);
+  transition: all 2s ease-in-out;
+  border-radius: 20px;
+  position: relative;
+}
+.details-left,
+.details-center,
+.details-right {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(0%);
+  transition: all 2s ease-in-out;
+}
+.details-left-p,
+.details-center-p,
+.details-right-p {
+  width: 100%;
+}
+p {
+  padding: 5%;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  position: relative;
+}
+.page-3,
+.page-4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.contact-us-container {
+  display: flex;
+  margin-left: 2%;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex: 1 1 50%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+form textarea {
+  width: 70%;
+  padding: 4%;
+  border-radius: 20px;
+  border-style: none;
+  font-size: 1.2rem;
+}
+.input-name,
+.thank-send {
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+form textarea,
+form input,
+form button {
+  border: 1px #ff8311 dotted;
+  padding: 5%;
+}
+
+button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.input-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.thank {
+  flex: 1 1 50%;
+  text-align: center;
+}
+.contact-us-container h1 {
+  font-family: "Playball", cursive;
+  font-size: 3rem;
+  color: #ff8311;
+  font-weight: lighter;
+}
+
+.git-container {
+  display: flex;
+  width: 60%;
+  height: 30vh;
+  /* background-color: brown; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.git-container .error-pages,
+.git-container .tesla,
+.git-container .portfolio {
+  display: flex;
+  width: 40%;
+  height: 70%;
+  background-color: white;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px rgb(73, 131, 218) solid;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  transform: rotate(-65deg);
+}
+
+.git-container .tesla {
+  border-bottom: 5px brown solid;
+}
+.git-container .portfolio {
+  border-bottom: 5px #be7f1f solid;
+}
+.symbol-error,
+.symbol-tesla,
+.symbol-portfolio {
+  display: flex;
+  flex: 1 1 30%;
+  justify-content: center;
+}
+.title-error,
+.title-tesla,
+.title-portfolio {
+  flex: 1 1 70%;
+  font-size: 2rem;
+}
+
+.symbol-error img,
+.symbol-tesla img,
+.symbol-portfolio img {
+  width: 70%;
+  overflow: auto;
+}
+
+.git1-logo img,
+.git2-logo img,
+.git3-logo img {
+  position: absolute;
+  border: 2px white solid;
+  border-radius: 50%;
+  width: 5%;
+  left: 28%;
+  top: 22%;
+  z-index: 1;
+}
+
+.git2-logo img {
+  left: 48%;
+}
+.git3-logo img {
+  left: 68%;
+}
+.inprogress-logo img {
+  position: absolute;
+  width: 8%;
+  left: 66%;
+  top: 68%;
+  z-index: 1;
+  animation: progress 0.5s linear 2s infinite alternate;
+}
+
+@keyframes progress {
+  form {
+    transform: rotate(25deg);
+  }
+  to {
+    transform: rotate(-25deg);
+  }
+}
