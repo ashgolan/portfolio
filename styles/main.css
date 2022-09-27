@@ -6,6 +6,7 @@
   font-family: "Zilla Slab", serif;
   text-decoration: none;
   scroll-behavior: smooth;
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 .body {
@@ -334,8 +335,8 @@ button {
 
 .git-container {
   display: flex;
-  width: 60%;
-  height: 30vh;
+  width: 90%;
+  height: 80vh;
   /* background-color: brown; */
   justify-content: space-around;
   align-items: center;
@@ -345,8 +346,8 @@ button {
 .git-container .tesla,
 .git-container .portfolio {
   display: flex;
-  width: 40%;
-  height: 70%;
+  width: 28%;
+  height: 30%;
   background-color: white;
   border-radius: 10px;
   justify-content: center;
@@ -392,8 +393,8 @@ button {
   border: 2px white solid;
   border-radius: 50%;
   width: 5%;
-  left: 28%;
-  top: 22%;
+  left: 18%;
+  top: 17%;
   z-index: 1;
 }
 
@@ -401,13 +402,13 @@ button {
   left: 48%;
 }
 .git3-logo img {
-  left: 68%;
+  left: 78%;
 }
 .inprogress-logo img {
   position: absolute;
   width: 8%;
-  left: 66%;
-  top: 68%;
+  left: 75%;
+  top: 73%;
   z-index: 1;
   animation: progress 0.5s linear 2s infinite alternate;
 }
