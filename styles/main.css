@@ -393,14 +393,14 @@ button {
 .git4-logo {
   position: absolute;
   top: 2%;
-  left: 82%;
+  left: 75%;
 }
 .git1-logo img,
 .git2-logo img,
 .git3-logo img,
 .git4-logo img {
-  width: 50px;
-  width: 50px;
+  width: 30px;
+  width: 30px;
 }
 .inprogress-logo img {
   position: absolute;
