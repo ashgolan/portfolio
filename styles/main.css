@@ -344,7 +344,8 @@ button {
 
 .git-container .error-pages,
 .git-container .tesla,
-.git-container .portfolio {
+.git-container .portfolio,
+.git-container .amazon {
   display: flex;
   width: 28%;
   height: 30%;
@@ -367,7 +368,8 @@ button {
 }
 .symbol-error,
 .symbol-tesla,
-.symbol-portfolio {
+.symbol-portfolio,
+.symbol-amazon {
   display: flex;
   flex: 1 1 30%;
   justify-content: center;
@@ -385,30 +387,26 @@ button {
   width: 70%;
   overflow: auto;
 }
-
+.git1-logo,
+.git2-logo,
+.git3-logo,
+.git4-logo {
+  position: absolute;
+  top: 2%;
+  left: 82%;
+}
 .git1-logo img,
 .git2-logo img,
-.git3-logo img {
-  position: absolute;
-  border: 2px white solid;
-  border-radius: 50%;
-  width: 5%;
-  left: 18%;
-  top: 17%;
-  z-index: 1;
-}
-
-.git2-logo img {
-  left: 48%;
-}
-.git3-logo img {
-  left: 78%;
+.git3-logo img,
+.git4-logo img {
+  width: 50px;
+  width: 50px;
 }
 .inprogress-logo img {
   position: absolute;
   width: 8%;
-  left: 75%;
-  top: 73%;
+  left: 79.5%;
+  top: 71%;
   z-index: 1;
   animation: progress 0.5s linear 2s infinite alternate;
 }
